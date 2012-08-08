@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profiles version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.serviio.org/xsd/profiles/1.8/Profiles.xsd">
+
+	<!--
+		========================= DO NOT EDIT - start ====================================
+	-->
+
+	<Profile id="1" name="Generic DLNA profile">
+		<ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.GenericDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+		<ProtocolInfo>DLNA</ProtocolInfo>
+		<DeviceDescription>
+			<FriendlyName>Serviio ({computerName})</FriendlyName>
+			<ModelName>Serviio Media Server</ModelName>
+			<Manufacturer>Petr Nejedly</Manufacturer>
+		</DeviceDescription>
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="audio/mpeg">MP3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/L16;rate=44100;channels=1" name="LPCM">LPCM16_44_MONO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/L16;rate=44100;channels=2" name="LPCM">LPCM16_44_STEREO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/L16;rate=48000;channels=1" name="LPCM">LPCM16_48_MONO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/L16;rate=48000;channels=2" name="LPCM">LPCM16_48_STEREO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/x-ms-wma">WMA_BASE</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/x-ms-wma">WMA_FULL</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/mp4">AAC_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/mp4">AAC_ISO_320</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/vnd.dlna.adts">AAC_ADTS</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/vnd.dlna.adts">AAC_ADTS_320</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="audio/flac">FLAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/ogg">OGG</MediaFormatProfile>
+			<MediaFormatProfile mime-type="image/jpeg">JPEG_SM</MediaFormatProfile>
+			<MediaFormatProfile mime-type="image/jpeg">JPEG_MED</MediaFormatProfile>
+			<MediaFormatProfile mime-type="image/jpeg">JPEG_LRG</MediaFormatProfile>
+			<MediaFormatProfile mime-type="image/jpeg">JPEG_TN</MediaFormatProfile>
+			<MediaFormatProfile mime-type="image/png">PNG_LRG</MediaFormatProfile>
+			<MediaFormatProfile mime-type="image/png">PNG_TN</MediaFormatProfile>
+			<MediaFormatProfile mime-type="image/gif">GIF_LRG</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG1</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG_PS_PAL</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG_PS_NTSC</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG_TS_SD_EU</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG_TS_SD_EU_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG_TS_SD_EU_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG_TS_SD_NA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG_TS_SD_NA_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG_TS_SD_NA_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG_TS_SD_KO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG_TS_SD_KO_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG_TS_SD_KO_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG_TS_JP_T</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/x-msvideo">AVI</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-matroska">MATROSKA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-flv">FLV</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-dvr">DVR_MS</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/wtv">WTV</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/ogg">OGV</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">AVC_MP4_MP_SD_AAC_MULT5</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/mp4">AVC_MP4_MP_SD_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">AVC_MP4_MP_SD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">AVC_MP4_MP_HD_720p_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">AVC_MP4_MP_HD_1080i_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">AVC_MP4_HP_HD_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">AVC_MP4_LPCM</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">MPEG4_P2_MP4_ASP_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">MPEG4_P2_MP4_SP_L6_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">MPEG4_P2_MP4_NDSD</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_AAC_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG4_P2_TS_ASP_AAC_ISO</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG4_P2_TS_ASP_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_MPEG1_L3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">MPEG4_P2_TS_ASP_MPEG2_L2_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_MPEG2_L2</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">MPEG4_P2_TS_ASP_MPEG2_L2_T</MediaFormatProfile>						
+			<MediaFormatProfile mime-type="video/mpeg">MPEG4_P2_TS_ASP_MPEG1_L3_ISO</MediaFormatProfile>		
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_SD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_SD_AAC_MULT5_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_MP_SD_AAC_MULT5_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_SD_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_SD_MPEG1_L3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_MP_SD_MPEG1_L3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_SD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_SD_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_MP_SD_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_HD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_HD_AAC_MULT5_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_MP_HD_AAC_MULT5_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_HD_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_HD_MPEG1_L3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_MP_HD_MPEG1_L3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_HD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_MP_HD_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_MP_HD_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_HD_DTS_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_HD_DTS_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_HD_50_LPCM_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_HP_SD_MPEG1_L2_ISO</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_HP_SD_MPEG1_L2_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">AVC_TS_HP_HD_MPEG1_L2_ISO</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">AVC_TS_HP_HD_MPEG1_L2_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">WMVMED_BASE</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">WMVMED_FULL</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">WMVHIGH_FULL</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">WMVMED_PRO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">WMVHIGH_PRO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-asf">VC1_ASF_AP_L1_WMA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-asf">VC1_ASF_AP_L2_WMA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-asf">VC1_ASF_AP_L3_WMA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">VC1_TS_AP_L1_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">VC1_TS_AP_L2_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg">VC1_TS_HD_DTS_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts">VC1_TS_HD_DTS_T</MediaFormatProfile>			
+			<MediaFormatProfile mime-type="video/3gpp">MPEG4_P2_3GPP_SP_L0B_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/3gpp">MPEG4_P2_3GPP_SP_L0B_AMR</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/3gpp">AVC_3GPP_BL_QCIF15_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/3gpp">MPEG4_H263_3GPP_P0_L10_AMR</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/3gpp">MPEG4_H263_MP4_P0_L10_AAC</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<OnlineTranscoding>
+			<Video targetContainer="mpegts" targetACodec="ac3" aBitrate="384">
+				<Matches container="mp4"/>
+				<Matches container="flv" vCodec="h264"/>			
+    			<Matches container="applehttp" vCodec="h264"/>
+			</Video>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384" forceInheritance="true">
+				<Matches container="rtp"/>
+				<Matches container="rtsp"/>
+				<Matches container="applehttp"/>
+			</Video>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="asf"/> <!-- to support mms:// streams -->
+				<Matches container="flv"/>
+			</Video>
+			<Audio targetContainer="mp3" aBitrate="384" forceInheritance="true">
+				<Matches container="flv"/>
+				<Matches container="asf"/>
+				<Matches container="rtp"/>
+				<Matches container="rtsp"/>
+				<Matches container="mp3"/>				
+			</Audio>
+		</OnlineTranscoding>
+		<AutomaticImageRotation>false</AutomaticImageRotation>
+		<LimitImageResolution>true</LimitImageResolution>
+	</Profile>
+
+	<!--
+		========================= DO NOT EDIT - end	====================================
+	-->
+
+	<Profile id="2" name="Samsung TV (B-series)" extendsProfileId="1">
+        <ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.SamsungDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+        <ResourceTransportProtocolHandler>org.serviio.upnp.protocol.http.transport.SamsungWiseLinkProtocolHandler</ResourceTransportProtocolHandler>
+        <Detection>
+            <UPnPSearch>
+                <FriendlyName>^TV$</FriendlyName>
+                <ModelName>Samsung DTV DMR</ModelName>
+                <ModelNumber>1\.0</ModelNumber>
+            </UPnPSearch>   
+        </Detection>
+        <DeviceDescription>
+        	<ExtraElements>
+        		&lt;sec:ProductCap&gt;smi,getMediaInfo.sec,getCaptionInfo.sec&lt;/sec:ProductCap&gt;
+				&lt;sec:X_ProductCap&gt;smi,getMediaInfo.sec,getCaptionInfo.sec&lt;/sec:X_ProductCap&gt;
+        	</ExtraElements>
+        </DeviceDescription>
+        <MediaFormatProfiles>
+            <MediaFormatProfile mime-type="video/x-mkv">MATROSKA</MediaFormatProfile>
+            <MediaFormatProfile mime-type="video/x-msvideo" name="">AVI</MediaFormatProfile>
+        </MediaFormatProfiles>
+        <Transcoding>
+        	<!-- Transcode all h264 video with HIGH/MAIN > Level 4.1 on MPEG-TS stream with MPEG2VIDEO and ac3 audio transcoding -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="192">
+				<Matches container="*" vCodec="h264" profile="high_10" />
+				<Matches container="*" vCodec="h264" profile="high" levelGreaterThan="4.2" />
+				<Matches container="*" vCodec="h264" profile="main" levelGreaterThan="4.2" />
+			</Video>
+            <!-- transcode MKV with DST/FLAC audio to AC3, remux into mpeg2ts -->
+            <!-- transcode H264 MP4 files with LPCM audio -->
+            <Video targetContainer="mpegts" targetACodec="ac3">
+                <Matches container="matroska" vCodec="h264" aCodec="dca" />         
+                <Matches container="mp4" vCodec="h264" aCodec="lpcm" />
+                <Matches container="matroska" vCodec="h264" aCodec="flac" />
+                <Matches container="matroska" vCodec="h264" aCodec="vorbis" />
+                <Matches container="matroska" vCodec="h264" aCodec="truehd" />
+                <Matches container="matroska" vCodec="vc1" />
+                <Matches container="avi" vCodec="h264" />
+                <Matches container="mpegts" aCodec="mp2" />
+                <Matches container="flv" vCodec="h264" />
+                <Matches container="ogg" vCodec="mpeg4" />
+                <Matches container="3gp" aCodec="amrnb" />                
+            </Video>
+            <!-- transcode unsupported codec/container combinations into mpeg2ts -->
+            <Video targetContainer="mpegts" targetACodec="ac3" targetVCodec="mpeg2video">
+                <Matches container="asf" vCodec="wmv2" />
+                <Matches container="matroska" vCodec="mpeg2video" />
+                <Matches container="matroska" vCodec="vp8" />
+                <Matches container="avi" vCodec="mjpeg" />
+                <Matches container="avi" vCodec="dvvideo" />
+                <Matches container="mp4" vCodec="mjpeg" />
+                <Matches container="flv" />
+                <Matches container="ogg" />                
+            </Video>
+            <!-- For dvr-ms files force mpeg2video transcoding to fix monotone timestamps problems-->
+            <Video targetContainer="mpegts" targetACodec="ac3" forceVTranscoding="true">
+                <Matches container="asf" vCodec="mpeg2video" />
+                <Matches container="asf" vCodec="mpeg1video" />
+            </Video>
+            <Video targetContainer="mpegts">
+                <Matches container="wtv" />
+                <!-- remux remaining MKV files which have header compression / stripping -->
+				<Matches container="matroska" mkvHeaderCompressed="true" />
+            </Video>
+            <!-- transcode audio only for wmv with wmapro -->
+            <Video targetContainer="asf" targetACodec="ac3" aBitrate="256">
+                <Matches container="asf" aCodec="wmapro" />
+            </Video>
+            <Audio targetContainer="lpcm">
+                <Matches container="asf" />
+                <Matches container="mp4" />
+                <Matches container="flac" />
+                <Matches container="ogg" />
+                <Matches container="adts" />
+            </Audio>
+        </Transcoding>
+        <OnlineTranscoding>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="mp4"/>
+			</Video>
+		</OnlineTranscoding>
+        <AutomaticImageRotation>true</AutomaticImageRotation>
+        <LimitImageResolution>false</LimitImageResolution>
+        <SubtitlesMimeType>smi/caption</SubtitlesMimeType>
+    </Profile>
+
+	<Profile id="3" name="Xbox 360" extendsProfileId="1">
+		<ResourceTransportProtocolHandler>org.serviio.upnp.protocol.http.transport.XBox360ProtocolHandler</ResourceTransportProtocolHandler>
+		<ProtocolInfo>simple</ProtocolInfo>
+		<Detection>
+			<UPnPSearch>
+				<ModelName>Xbox 360</ModelName>
+			</UPnPSearch>	
+		</Detection>
+		<DeviceDescription>
+			<FriendlyName>Serviio ({computerName}): 1</FriendlyName>
+			<ModelName>Windows Media Player Sharing</ModelName>
+			<ModelNumber>12.0</ModelNumber>
+		</DeviceDescription>
+		<ContentDirectoryDefinitionFilter>org.serviio.upnp.service.contentdirectory.definition.XBox360ContentDirectoryDefinitionFilter</ContentDirectoryDefinitionFilter>
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="video/avi">AVI</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">VC1_ASF_AP_L1_WMA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">VC1_ASF_AP_L2_WMA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">VC1_ASF_AP_L3_WMA</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<Transcoding>
+			<!--
+				http://blogs.msdn.com/xboxteam/archive/2007/11/30/december-2007-video-playback-faq.aspx
+			-->
+			<Video targetContainer="asf" targetVCodec="wmv2" targetACodec="wmav2" maxVBitrate="15360" forceStereo="true">
+				<Matches container="matroska" />
+				<Matches container="mpeg" />
+				<Matches container="mpegts" />
+				<Matches container="mpegvideo" />
+				<Matches container="avi" vCodec="h264" />
+				<Matches container="avi" vCodec="msmpeg4" />
+				<Matches container="avi" vCodec="wmv2" />
+				<Matches container="avi" vCodec="dvvideo" />
+				<Matches container="wtv" />
+				<Matches container="ogg" />
+				<Matches container="3gp" />
+				<Matches container="flv" />  
+			</Video>
+			<Audio targetContainer="mp3">
+				<Matches container="flac" />
+				<Matches container="ogg" />
+				<Matches container="adts" />
+				<Matches container="mp4" /> <!-- iTunes store m4a files need to be transcoded to play -->
+			</Audio>
+		</Transcoding>
+		<OnlineTranscoding keepStreamOpen="false">
+			<Video targetContainer="asf" targetVCodec="wmv2" targetACodec="wmav2" maxVBitrate="15360" forceStereo="true">
+				<Matches container="*"/>
+			</Video>
+		</OnlineTranscoding>
+		<LimitImageResolution>false</LimitImageResolution>
+	</Profile>
+
+	<Profile id="4" name="Playstation 3" extendsProfileId="1">
+	 <!-- http://manuals.playstation.net/document/en/ps3/current/video/filetypes.html
+	  
+	    The following types of files can be played under  (Video).
+	    Memory Stick Video Format
+	     - MPEG-4 SP (AAC LC)
+	     - H.264/MPEG-4 AVC High Profile (AAC LC)
+	     - MPEG-2 TS(H.264/MPEG-4 AVC, AAC LC)
+	    MP4 file format
+	     - H.264/MPEG-4 AVC High Profile (AAC LC)
+	    MPEG-1 (MPEG Audio Layer 2)
+	    MPEG-2 PS (MPEG2 Audio Layer 2, AAC LC, AC3(Dolby Digital), LPCM)
+	    MPEG-2 TS (MPEG2 Audio Layer 2, AC3(Dolby Digital), AAC LC)
+	    MPEG-2 TS (H.264/MPEG-4 AVC, AAC LC)
+	    AVI
+	     - Motion JPEG (Linear PCM)
+	     - Motion JPEG (mu-Law)
+	    AVCHD (.m2ts / .mts)
+	    DivX
+	    WMV
+	     - VC-1(WMA Standard V2) -->
+		<Detection>
+			<HttpHeaders>
+				<X-AV-Client-Info>.*PLAYSTATION 3.*</X-AV-Client-Info>
+			</HttpHeaders>	
+		</Detection>
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="video/divx">AVI</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">VC1_ASF_AP_L1_WMA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">VC1_ASF_AP_L2_WMA</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/x-ms-wmv">VC1_ASF_AP_L3_WMA</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<Transcoding>
+			<!-- Transcode all h264 video with HIGH/MAIN > Level 4.1 on MPEG-TS stream with MPEG2VIDEO and ac3 audio transcoding -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="*" vCodec="h264" profile="high" levelGreaterThan="4.1" />
+				<Matches container="*" vCodec="h264" profile="main" levelGreaterThan="4.1" />
+				<Matches container="avi" vCodec="dvvideo" />
+				<Matches container="matroska" vCodec="vp8" />
+			</Video>
+			<!--
+				remux MKV with any video to MPEG2TS and possibly change audio to ac3, also AVI and FLV with H264
+			-->
+			<Video targetContainer="mpegts" targetACodec="ac3" aBitrate="384">
+				<Matches container="matroska" />
+				<Matches container="avi" vCodec="h264" />
+				<Matches container="flv" vCodec="h264" />
+				<Matches container="3gp" vCodec="h264" />
+			</Video>
+			<Video targetContainer="mpegts" >
+				<Matches container="wtv" />
+				<Matches container="asf" vCodec="mpeg2video"/> <!--  dvr-ms -->				
+			</Video>
+			<!-- all other unplayable files just transcode to mpeg2 -->
+			<Video targetContainer="mpegts" targetACodec="ac3" targetVCodec="mpeg2video" aBitrate="384">
+				<Matches container="flv" />
+				<Matches container="ogg" />
+				<Matches container="3gp" />
+				<Matches container="asf" vCodec="mpeg1video"/> <!--  dvr-ms -->
+				<Matches container="asf" vCodec="vc1" aCodec="wmapro"/> <!-- only 2 channel audio is natively supported -->
+				<Matches container="asf" vCodec="wmv2"/>
+			</Video>
+			
+			<Audio targetContainer="lpcm" aSamplerate="48000">
+				<Matches container="flac" />
+				<Matches container="ogg" />
+				<Matches container="adts" />
+			</Audio>
+		</Transcoding>
+		<OnlineTranscoding>
+			<Video targetContainer="mpegts" targetACodec="ac3" aBitrate="384">
+				<Matches container="mp4"/>					
+    			<Matches container="applehttp" vCodec="h264"/>
+			</Video>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3">
+				<Matches container="asf"/> <!-- to support mms:// streams -->
+			</Video>
+			<!-- PS3 doesn't like mp3 with unlimited duration (eg online mp3 streams or streams transcoded into mp3 -->
+			<Audio targetContainer="lpcm" aSamplerate="48000">
+				<Matches container="mp3"/>
+				<Matches container="flv"/>
+				<Matches container="asf"/>
+			</Audio>
+		</OnlineTranscoding>
+		<LimitImageResolution>false</LimitImageResolution>
+	</Profile>
+
+	<Profile id="5" name="Samsung TV (A-series)" extendsProfileId="2">
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="video/divx">AVI</MediaFormatProfile>
+		</MediaFormatProfiles>		
+		<Transcoding>
+			<!-- For dvr-ms files force mpeg2video transcoding to fix monotone timestamps problems-->
+			<Video targetContainer="mpegts" targetACodec="ac3" forceVTranscoding="true">
+				<Matches container="asf" vCodec="mpeg2video" />
+				<Matches container="asf" vCodec="mpeg1video" />
+			</Video>
+			<Video targetContainer="mpegts" targetACodec="ac3">
+				<Matches container="matroska" vCodec="h264" />
+			</Video>
+			<Video targetContainer="mpegts" targetACodec="ac3" targetVCodec="mpeg2video">
+				<Matches container="matroska" />
+				<Matches container="mp4" />
+				<Matches container="asf" />
+				<Matches container="avi" vCodec="mjpeg" />
+				<Matches container="avi" vCodec="dvvideo" />
+				<Matches container="ogg" />
+				<Matches container="3gp" />  
+			</Video>
+			<Video targetContainer="mpegts">
+				<Matches container="wtv" />
+			</Video>
+			<Audio targetContainer="lpcm">
+				<Matches container="asf" />
+				<Matches container="mp4" />
+				<Matches container="flac" />
+				<Matches container="ogg" />
+				<Matches container="adts" />
+			</Audio>
+		</Transcoding>
+	</Profile>
+
+	<Profile id="6" name="DirecTV HD-DVR" extendsProfileId="1">
+		<Detection>
+			<HttpHeaders>
+				<User-Agent>.*DIRECTV.*</User-Agent>
+			</HttpHeaders>
+			<UPnPSearch>
+                <FriendlyName>^DIRECTV.*$</FriendlyName>
+            </UPnPSearch>
+		</Detection>
+		<Transcoding>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="mp2" maxVBitrate="8192" forceStereo="true" DAR="16:9">
+				<Matches container="matroska" />
+				<Matches container="mp4" />
+				<Matches container="asf" />
+				<Matches container="avi" />
+				<Matches container="ogg" />
+				<Matches container="flv" />
+				<Matches container="3gp" />  				
+			</Video>
+		</Transcoding>			
+	</Profile>
+	
+	<Profile id="7" name="Samsung TV / player (C/D/E-series)" extendsProfileId="1">
+		<ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.SamsungDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+        <ResourceTransportProtocolHandler>org.serviio.upnp.protocol.http.transport.SamsungWiseLinkProtocolHandler</ResourceTransportProtocolHandler>
+        <Detection>
+			<UPnPSearch>
+				<FriendlyName>(^TV-\d{2}C\d{3}.*)|(^\[TV\][A-Z]{2}\d{2}D\d{3}.*)</FriendlyName>				
+				<ModelNumber>(1\.0)|(AllShare1\.0)</ModelNumber>
+			</UPnPSearch>	
+			<HttpHeaders>
+				<!-- for BD players -->
+				<User-Agent>(.*SEC_HHP_BD-[CDE].*)|(.*SEC_HHP_\[(HT|BD)\][CDE].*)</User-Agent>
+			</HttpHeaders>
+		</Detection>
+		<DeviceDescription>
+        	<ExtraElements>
+        		&lt;sec:ProductCap&gt;smi,DCM10,getMediaInfo.sec,getCaptionInfo.sec&lt;/sec:ProductCap&gt;
+				&lt;sec:X_ProductCap&gt;smi,DCM10,getMediaInfo.sec,getCaptionInfo.sec&lt;/sec:X_ProductCap&gt;
+        	</ExtraElements>
+        </DeviceDescription>
+        <MediaFormatProfiles>
+            <MediaFormatProfile mime-type="video/x-mkv">MATROSKA</MediaFormatProfile>
+            <MediaFormatProfile mime-type="video/x-msvideo" name="">AVI</MediaFormatProfile>
+        </MediaFormatProfiles>
+		<ContentDirectoryDefinitionFilter>org.serviio.upnp.service.contentdirectory.definition.SamsungContentDirectoryDefinitionFilter</ContentDirectoryDefinitionFilter>	
+		<Transcoding>
+			<!-- Transcode all h264 video with HIGH/MAIN > Level 4.1 on MPEG-TS stream with MPEG2VIDEO and ac3 audio transcoding -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="192" maxVBitrate="20000">
+				<Matches container="*" vCodec="h264" profile="high_10" />
+				<Matches container="*" vCodec="h264" profile="high" levelGreaterThan="4.2" />
+				<Matches container="*" vCodec="h264" profile="main" levelGreaterThan="4.2" />
+                <Matches container="mp4" vCodec="mpeg4" aCodec="lpcm" />
+			</Video>
+			<!-- transcode H264 MP4 files with LPCM audio -->
+			<Video targetContainer="mpegts" targetACodec="ac3">
+				<Matches container="mpegts" aCodec="mp2" />
+				<Matches container="mp4" aCodec="lpcm" />
+				<Matches container="flv" vCodec="h264" />
+				<Matches container="matroska" vCodec="h264" aCodec="flac" />
+				<Matches container="matroska" vCodec="h264" aCodec="vorbis" />
+				<Matches container="matroska" vCodec="h264" aCodec="truehd" />
+				<Matches container="matroska" vCodec="vc1" />
+				<Matches container="ogg" vCodec="mpeg4" />
+				<Matches container="3gp" aCodec="amrnb" />  
+			</Video>	
+			<!-- transcode MKV with MPEG2 video, remux into mpeg2ts -->
+			<!-- transcode AVI with AVC video -->
+			<Video targetContainer="mpegts" targetACodec="ac3" targetVCodec="mpeg2video" maxVBitrate="20000">
+				<Matches container="matroska" vCodec="mpeg2video" />
+				<Matches container="matroska" vCodec="vp8" />
+				<Matches container="avi" vCodec="h264" />
+				<Matches container="avi" vCodec="mjpeg" />
+				<Matches container="avi" vCodec="dvvideo" />
+				<Matches container="flv" /> 
+				<Matches container="ogg" />
+			</Video>
+			<!-- For dvr-ms files force mpeg2video transcoding to fix monotone timestamps problems-->
+			<Video targetContainer="mpegts" targetACodec="ac3" forceVTranscoding="true" maxVBitrate="20000">
+				<Matches container="asf" vCodec="mpeg2video" />
+				<Matches container="asf" vCodec="mpeg1video" />
+			</Video>			            
+			<Video targetContainer="mpegts">
+				<Matches container="wtv" />
+				<!-- remux remaining MKV files which have header compression / stripping -->
+				<Matches container="matroska" mkvHeaderCompressed="true" />
+			</Video>
+			<!-- transcode audio only for wmv with wmapro -->
+			<Video targetContainer="asf" targetACodec="ac3" aBitrate="256">
+				<Matches container="asf" aCodec="wmapro" />
+			</Video>
+			<Audio targetContainer="lpcm">
+				<Matches container="mp4" />
+				<Matches container="flac" />
+				<Matches container="ogg" />
+				<Matches container="adts" />
+			</Audio>
+		</Transcoding>
+		<OnlineTranscoding>
+			<Video targetContainer="mpegts" targetACodec="ac3" aBitrate="384">
+				<Matches container="mp4" vCodec="h264" />		
+    			<Matches container="applehttp" vCodec="h264"/>
+			</Video>		
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384" maxVBitrate="20000">
+				<Matches container="mp4" />
+				<Matches container="asf" /> <!-- mms -->
+			</Video>
+		</OnlineTranscoding>
+		<AutomaticImageRotation>true</AutomaticImageRotation>
+        <LimitImageResolution>false</LimitImageResolution>
+        <SubtitlesMimeType>smi/caption</SubtitlesMimeType>		
+	</Profile>
+	
+	<Profile id="8" name="LG TV / player" extendsProfileId="1">
+		<Detection>
+			<HttpHeaders>
+				<friendlyName.dlna.org>LG.*</friendlyName.dlna.org>
+			</HttpHeaders>
+		</Detection>
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="video/mp4" name="">AVI</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<SubtitlesMimeType>text/srt</SubtitlesMimeType>
+		<!-- 
+		Transcoding doesn't seem to work and some files can be played natively: 
+		http://forum.serviio.org/viewtopic.php?f=12&t=3914#p26273
+		<Transcoding>
+			<Video targetContainer="mpegts" targetACodec="mp3">
+				<Matches container="matroska" aCodec="ac3" />
+			</Video>
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3" >
+				<Matches container="avi" vCodec="msmpeg4"/>
+			</Video>
+		</Transcoding> -->
+	</Profile>
+
+	<Profile id="sony2012" name="Sony Bravia TV (2012)" extendsProfileId="1">
+      <!-- 2012 models
+         - Still images: JPEG, MPO
+         - Music: MP3, linear PCM, WMA, MP4
+         - Video: AVCHD, MPEG2, MPEG1, MP4 (AVC), MP4 (MPEG4), DivX, WMV -->
+      	<Detection>
+			<UPnPSearch>
+				<FriendlyName>BRAVIA KDL-\d{2}[A-Z]X\d5(\d|G).*</FriendlyName>
+			</UPnPSearch>
+		</Detection>
+		<DeviceDescription>
+			<!-- act as WMP so that the TV doesn't show root categories -->
+			<ModelName>Windows Media Player Sharing</ModelName>
+			<ModelNumber>3.0</ModelNumber>
+			<Manufacturer>Microsoft Corporation</Manufacturer>
+		</DeviceDescription>
+		<ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.SonyDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+		<ContentDirectoryDefinitionFilter>org.serviio.upnp.service.contentdirectory.definition.WMPContentDirectoryDefinitionFilter</ContentDirectoryDefinitionFilter>
+		<MediaFormatProfiles>
+			<!-- rename native WMA formats to those supported by the tv -->
+			<MediaFormatProfile mime-type="audio/x-ms-wma" name="WMABASE">WMA_BASE</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/x-ms-wma" name="WMAFULL">WMA_FULL</MediaFormatProfile>
+			<!-- rename 3gp profiles that can be played as AVC -->
+			<MediaFormatProfile mime-type="video/mp4" name="AVC_MP4_MP_SD_AAC_MULT5">AVC_3GPP_BL_QCIF15_AAC</MediaFormatProfile>
+			<!-- Rename native avi formats to those supported by the tv -->
+			<MediaFormatProfile mime-type="video/avi" name="">AVI</MediaFormatProfile>
+			<!-- Rename native mpeg2ts with h264+ac3/aac formats to those supported by the tv (aac support is not advertised by the renderer but it works) -->
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3,AVC_TS_HD_50_AC3,AVC_TS_HD_60_AC3,AVC_TS_HD_EU">AVC_TS_MP_HD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3,AVC_TS_HD_50_AC3,AVC_TS_HD_60_AC3,AVC_TS_HD_EU">AVC_TS_MP_SD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3,AVC_TS_HD_50_AC3,AVC_TS_HD_60_AC3,AVC_TS_HD_EU">AVC_TS_MP_HD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3,AVC_TS_HD_50_AC3,AVC_TS_HD_60_AC3,AVC_TS_HD_EU">AVC_TS_MP_SD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3_T,AVC_TS_HD_50_AC3_T,AVC_TS_HD_60_AC3_T,AVC_TS_HD_EU_T">AVC_TS_MP_HD_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3_T,AVC_TS_HD_50_AC3_T,AVC_TS_HD_60_AC3_T,AVC_TS_HD_EU_T">AVC_TS_MP_SD_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3_T,AVC_TS_HD_50_AC3_T,AVC_TS_HD_60_AC3_T,AVC_TS_HD_EU_T">AVC_TS_HP_HD_MPEG1_L2_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3_T,AVC_TS_HD_50_AC3_T,AVC_TS_HD_60_AC3_T,AVC_TS_HD_EU_T">AVC_TS_HP_SD_MPEG1_L2_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3_T,AVC_TS_HD_50_AC3_T,AVC_TS_HD_60_AC3_T,AVC_TS_HD_EU_T">AVC_TS_MP_HD_AAC_MULT5_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="AVC_TS_HD_24_AC3_T,AVC_TS_HD_50_AC3_T,AVC_TS_HD_60_AC3_T,AVC_TS_HD_EU_T">AVC_TS_MP_SD_AAC_MULT5_T</MediaFormatProfile>
+			<!-- Rename transcoded mpeg2ts with h264 to one of the TV's supported profiles -->
+			<MediaFormatProfile mime-type="video/mpeg" name="AVC_TS_HD_24_AC3_ISO,AVC_TS_HD_50_AC3_ISO,AVC_TS_HD_60_AC3_ISO,AVC_TS_HD_EU_ISO">AVC_TS_MP_HD_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="AVC_TS_HD_24_AC3_ISO,AVC_TS_HD_50_AC3_ISO,AVC_TS_HD_60_AC3_ISO,AVC_TS_HD_EU_ISO">AVC_TS_MP_SD_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="AVC_TS_HD_24_AC3_ISO,AVC_TS_HD_50_AC3_ISO,AVC_TS_HD_60_AC3_ISO,AVC_TS_HD_EU_ISO">AVC_TS_HP_HD_MPEG1_L2_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="AVC_TS_HD_24_AC3_ISO,AVC_TS_HD_50_AC3_ISO,AVC_TS_HD_60_AC3_ISO,AVC_TS_HD_EU_ISO">AVC_TS_HP_SD_MPEG1_L2_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="AVC_TS_HD_24_AC3_ISO,AVC_TS_HD_50_AC3_ISO,AVC_TS_HD_60_AC3_ISO,AVC_TS_HD_EU_ISO">AVC_TS_MP_HD_AAC_MULT5_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="AVC_TS_HD_24_AC3_ISO,AVC_TS_HD_50_AC3_ISO,AVC_TS_HD_60_AC3_ISO,AVC_TS_HD_EU_ISO">AVC_TS_MP_SD_AAC_MULT5_ISO</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<Transcoding>
+			<!-- Transcode all h264 video with HIGH/MAIN > Level 4.1 on MPEG-TS stream with MPEG2VIDEO and ac3 audio transcoding -->
+			<!-- expected profile MPEG_TS_SD_EU/MPEG_TS_SD_NA/MPEG_TS_SD_KO -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+				<Matches container="*" vCodec="h264" profile="high" levelGreaterThan="4.1" />
+				<Matches container="*" vCodec="h264" profile="main" levelGreaterThan="4.1" />
+				<Matches container="mpegts" vCodec="vc1" />
+				<Matches container="asf" vCodec="vc1" aCodec="wmapro" />
+				<Matches container="avi" vCodec="dvvideo" />
+			</Video>
+			<!-- Remux containers with h264 video + AC3/AAC audio to MPEG-TS stream without transcoding -->
+			<Video targetContainer="mpegts" forceInheritance="true">
+				<Matches container="avi" vCodec="h264" aCodec="ac3" />
+				<Matches container="avi" vCodec="h264" aCodec="aac" />
+				<Matches container="matroska" vCodec="h264" aCodec="ac3" />
+				<Matches container="matroska" vCodec="h264" aCodec="aac" />
+				<Matches container="flv" vCodec="h264" aCodec="ac3" />
+				<Matches container="flv" vCodec="h264" aCodec="aac" />
+			</Video>
+			<!-- Remux all other h264 video to MPEG-TS stream with ac3 audio transcoding -->
+			<!-- expected profile AVC_TS_MP_HD_AC3_ISO -->
+			<Video targetContainer="mpegts" targetACodec="ac3" aBitrate="384" forceInheritance="true">
+				<Matches container="avi" vCodec="h264" />
+				<Matches container="matroska" vCodec="h264" />
+				<Matches container="flv" vCodec="h264" />
+				<Matches container="mp4" vCodec="h264" aCodec="mp3" />
+				<Matches container="mp4" vCodec="h264" aCodec="lpcm" />
+				<!-- if audio different to ac3/aac, it must be transcoded -->
+				<Matches container="mpegts" aCodec="mp3" />
+				<Matches container="mpegts" aCodec="dca" />
+				<Matches container="mpegts" aCodec="lpcm" />
+				<Matches container="mpeg" aCodec="dca" />
+			</Video>
+			<!-- VC1_ASF_AP_L3_WMA not supported : TODO find a match -->
+			<!-- <Video targetContainer="asf" targetACodec="wmav2" forceStereo="true"> -->
+			<!-- <Matches container="asf" vCodec="vc1" maxHeight="720"/> -->
+			<!-- </Video> -->
+			<!-- DVR-MS -->
+			<!-- force mpeg2video transcoding to fix monotone timestamps problems -->
+			<Video targetContainer="mpegts" targetACodec="ac3" forceVTranscoding="true" DAR="16:9" forceInheritance="true">
+				<Matches container="asf" vCodec="mpeg2video" />
+			</Video>
+			<!-- All Others video/audio codec will be transcoded into mpeg2ts, mpeg2video and ac3 audio -->
+			<!-- expected profile MPEG_TS_SD_EU/MPEG_TS_SD_NA/MPEG_TS_SD_KO -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+				<Matches container="matroska" />
+				<Matches container="flv" />
+				<Matches container="wtv" />
+				<Matches container="ogg" />
+				<Matches container="3gp" vCodec="mpeg4" />
+				<Matches container="3gp" vCodec="h263" />
+			</Video>
+			<Audio targetContainer="lpcm" forceInheritance="true">
+				<!-- To allow "pause" then "resume" functions and album art for TVs that support it - transcode to mp3 instead -->
+				<Matches container="ogg" />
+				<Matches container="flac" />
+			</Audio>
+			<Image forceInheritance="true">
+				<Matches container="jpeg" subsampling="YUV444" />
+			</Image>
+		</Transcoding>
+		<OnlineTranscoding>
+			<Video targetContainer="mpegts" forceInheritance="true"> <!-- do not transcode to ac3 -->
+				<Matches container="mp4" />
+				<Matches container="flv" vCodec="h264" />
+				<Matches container="applehttp" vCodec="h264" />
+			</Video>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+				<Matches container="asf" /> <!-- to support mms:// streams -->
+				<Matches container="flv" />
+			</Video>
+		</OnlineTranscoding>
+	</Profile> 
+	
+	<Profile id="10" name="Sony BD Player / SMP" extendsProfileId="1">
+		<!-- Since Serviio 0.5.1 this profile is multiregion -->
+		<Detection>
+				<UPnPSearch>
+					<FriendlyName>(Blu-ray Disc Player|.*Home Theat(re|er) System|Media Player)</FriendlyName>
+					<Manufacturer>Sony Corporation</Manufacturer>
+				</UPnPSearch>
+				<HttpHeaders>
+					<X-AV-Client-Info>.*cn="Sony Corporation"; mn="(Blu-ray Disc Player|.*Home Theat(re|er) System|Media Player)".*</X-AV-Client-Info>
+				</HttpHeaders>
+		</Detection>	
+		<DeviceDescription>
+			<!-- act as WMP so that the TV doesn't show root categories -->
+			<ModelName>Windows Media Player Sharing</ModelName>
+			<ModelNumber>3.0</ModelNumber>
+			<Manufacturer>Microsoft Corporation</Manufacturer>
+		</DeviceDescription>
+		<ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.SonyDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+		<ContentDirectoryDefinitionFilter>org.serviio.upnp.service.contentdirectory.definition.WMPContentDirectoryDefinitionFilter</ContentDirectoryDefinitionFilter>
+		<MediaFormatProfiles>
+			<!-- force DLNA profile names of supported formats -->
+			<!-- e.g. though renderer should support wma, it only does so when disguised as mp3 (many other audio types are transcoded later in the profile) -->
+			<MediaFormatProfile mime-type="audio/mpeg" name="MP3">WMA_BASE</MediaFormatProfile>
+			<MediaFormatProfile mime-type="audio/mpeg" name="MP3">WMA_FULL</MediaFormatProfile>
+			<!-- set mkv to divx mime-type to allow subtitle and multiple audio track support for European and Canadian players -->
+			<!-- This native mkv playback disabled by default - read comment in transcoding section for the reasons -->
+			<MediaFormatProfile mime-type="video/divx">MATROSKA</MediaFormatProfile>
+			<!-- To avoid needing region-specific profiles, avi must be set to mpeg mime type (US players require this) -->
+			<!-- AVI clips seems to be a little bit slower to start like this on European players. If that bothers you, delete the line below -->
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVI</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_SD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_SD_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_SD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_HD_720p_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_HD_1080i_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_HP_HD_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_LPCM</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">MPEG4_P2_MP4_ASP_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">MPEG4_P2_MP4_SP_L6_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">MPEG4_P2_MP4_NDSD</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AAC_MULT5_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AAC_MULT5_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_MPEG1_L3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_MPEG1_L3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AAC_MULT5_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AAC_MULT5_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_MPEG1_L3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_MPEG1_L3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_SD_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_HP_SD_MPEG1_L2_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_HP_SD_MPEG1_L2_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_AAC_MULT5</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_AAC_MULT5_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_AAC_MULT5_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_MPEG1_L3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_MPEG1_L3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_MP_HD_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_HD_DTS_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_HD_DTS_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_HD_50_LPCM_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_HP_HD_MPEG1_L2_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">AVC_TS_HP_HD_MPEG1_L2_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_AAC_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_AAC_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_AC3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_AC3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_MPEG1_L3</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_MPEG1_L3_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_MPEG1_L3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_MPEG2_L2</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_MPEG2_L2_T</MediaFormatProfile>						
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">MPEG4_P2_TS_ASP_MPEG2_L2_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">VC1_TS_AP_L1_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">VC1_TS_AP_L2_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">VC1_TS_HD_DTS_T</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/vnd.dlna.mpeg-tts" name="MPEG_TS_SD_EU,MPEG_TS_SD_NA,MPEG_TS_SD_KO">VC1_TS_HD_DTS_ISO</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<Transcoding>
+			<!-- Sony BDP requests all formats except mpeg-ps and mpeg-ts in 32KB chunks which works badly over wifi, hence mkv files are remuxed to mpeg-ts by default in this profile. Natively played mkv files 
+				stutter irretrievably after seeks, which seems to be a DLNA firmware issue with the player. If you have a European or Canadian player (not US), you stream over a wired connection and want mkv subtitles, 
+				dts support, and multiple audio tracks - but don't care that you can't seek - remove all matroska transcoding matches below to have the player decode mkv natively. -->
+			<Video targetContainer="mpegts" targetACodec="ac3" aBitrate="320">
+				<!-- FFmpeg cannot currently remux dts audio properly so it must be transcoded, but all other audio is left alone -->
+				<Matches container="matroska" aCodec="dca" />
+				<Matches container="matroska" aCodec="vorbis" />
+				<Matches container="ogg" vCodec="mpeg4" />
+				<Matches container="mp4" aCodec="lpcm" />
+			</Video>
+			<!-- For dvr-ms files force mpeg2video transcoding to fix monotone timestamps problems -->
+			<Video targetContainer="mpegts" targetACodec="ac3" forceVTranscoding="true">
+				<Matches container="asf" vCodec="mpeg2video" />
+				<Matches container="asf" vCodec="mpeg1video" />
+			</Video>
+			<!-- h264 videos with high/main profile level > 4.1 will be transcoded to mpegts with mpeg2video and ac3 audio -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="320">
+				<Matches container="*" vCodec="h264" profile="high" levelGreaterThan="4.1" />
+				<Matches container="*" vCodec="h264" profile="main" levelGreaterThan="4.1" />
+				<Matches container="matroska" vCodec="vp8" />
+			</Video>
+			<Video targetContainer="mpegts">
+				<Matches container="matroska" />
+				<!-- remux mp4 container files to mpeg-ts to allow seeking -->
+				<!-- this also fixes the renderer's jerky playback of mov container files such as iPhone 4 HD video recordings -->
+				<Matches container="mp4" vCodec="h264" />
+				<Matches container="avi" vCodec="h264" />
+			</Video>
+			<!-- unsupported codecs will be transcoded to mpegts with mpeg2video and ac3 audio -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3">
+				<Matches container="asf" />
+				<Matches container="flv" />
+				<Matches container="ogg" />
+				<Matches container="avi" vCodec="dvvideo" />
+				<!-- digital camera video formats -->
+				<Matches container="avi" vCodec="mjpeg" />
+				<Matches container="mp4" vCodec="mjpeg" />
+			</Video>
+			<Audio targetContainer="lpcm">
+				<Matches container="mp4" />
+				<Matches container="flac" />
+				<Matches container="ogg" />
+				<Matches container="adts" />
+			</Audio>
+		</Transcoding>
+		<OnlineTranscoding>
+			<Video targetContainer="mpegts"> <!-- dont transcode to ac3 -->
+				<Matches container="mp4" />
+				<Matches container="flv" vCodec="h264" contentType="vod" /> <!-- exclude live flv streams which crash the renderer -->
+				<Matches container="applehttp" vCodec="h264" />
+			</Video>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="asf" /> <!-- to support mms:// streams -->
+				<Matches container="flv" />
+			</Video>
+		</OnlineTranscoding>
+	</Profile>
+	
+	<Profile id="13" name="Toshiba REGZA" extendsProfileId="1">
+		<Transcoding>
+			<Video targetContainer="mpeg" targetACodec="ac3" targetVCodec="mpeg2video">
+				<Matches container="mp4" />
+				<Matches container="avi" />
+				<Matches container="mpegts" />
+				<Matches container="mpegvideo" />
+				<Matches container="asf" />
+				<Matches container="ogg" />
+				<Matches container="flv" />
+				<Matches container="3gp" />  
+				<!-- if audio different to ac3, must be transcoded -->
+				<Matches container="mpeg" aCodec="aac" />
+				<Matches container="mpeg" aCodec="mp3" />
+				<Matches container="mpeg" aCodec="dca" />
+			</Video>
+			<Video targetContainer="mpegts" targetACodec="ac3" targetVCodec="mpeg2video">
+				<Matches container="matroska" />
+			</Video>
+			<Audio targetContainer="mp3">  
+	            <Matches container="mp4" />
+	            <Matches container="flac" />
+	            <Matches container="ogg" />
+	            <Matches container="asf" />
+	         </Audio>
+		</Transcoding>
+		<OnlineTranscoding>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3">
+				<Matches container="mp4" />
+				<Matches container="flv" />
+			</Video>
+		</OnlineTranscoding>
+	</Profile>
+
+	<Profile id="14" name="WDTV Live" extendsProfileId="1">
+		<Detection>
+			<UPnPSearch>
+				<ModelName>WD TV HD Live</ModelName>
+			</UPnPSearch>
+		</Detection>
+		<ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.PacketVideoDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+		<SubtitlesMimeType>text/srt</SubtitlesMimeType>
+		<Transcoding>
+			<Video targetContainer="mpeg">
+				<Matches container="wtv" />
+			</Video>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="flv" /> <!-- this is used by online content, assuming WDTV cannot play local flv either -->
+				<Matches container="matroska" vCodec="vp8" />
+			</Video>
+      	</Transcoding>
+      	<OnlineTranscoding>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="mp4" />
+				<Matches container="asf" /> <!-- for mms:// -->
+			</Video>
+		</OnlineTranscoding>    
+	</Profile>
+
+	<Profile id="15" name="LaCie LaCinema Media Player"	extendsProfileId="1">
+		<Detection>
+			<UPnPSearch>
+				<ModelNumber>LaCinema.*</ModelNumber>
+			</UPnPSearch>
+		</Detection>
+		<ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.PacketVideoDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+		<SubtitlesMimeType>text/srt</SubtitlesMimeType>
+	</Profile>
+
+	<Profile id="16" name="Manta WIFI Centre" extendsProfileId="1">
+		<Detection>
+			<HttpHeaders>
+				<User-Agent>.*Manta.*</User-Agent>
+			</HttpHeaders>
+		</Detection>
+		<Transcoding>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video"	targetACodec="mp3">
+				<Matches container="matroska" />
+				<Matches container="mp4" />
+				<Matches container="asf" />
+				<Matches container="avi" />
+			</Video>
+			<Audio targetContainer="mp3">
+				<Matches container="mp4" />
+				<Matches container="flac" />
+				<Matches container="ogg" />
+				<Matches container="lpcm" />
+				<Matches container="adts" />
+			</Audio>
+		</Transcoding>
+	</Profile>
+	
+	<Profile id="17" name="Pure Flow" extendsProfileId="1">
+		<Detection>
+			<HttpHeaders>
+				<User-Agent>.*PURE.*</User-Agent>
+			</HttpHeaders>
+		</Detection>
+		<Transcoding>
+			<Audio targetContainer="mp3" aBitrate="256">
+				<Matches container="lpcm" />
+				<Matches container="flac" />
+				<Matches container="ogg" />
+			</Audio>
+		</Transcoding>
+	</Profile>
+		
+	<Profile id="18" name="Sharp Aquos" extendsProfileId="1">
+		<Detection>
+			<HttpHeaders>
+				<User-Agent>.*SHARP-AQUOS.*</User-Agent>
+			</HttpHeaders>
+		</Detection>
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_TS_SD_EU_ISO">AVC_TS_MP_HD_AC3_ISO</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/avi" name="">AVI</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">MPEG4_P2_3GPP_SP_L0B_AAC</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">MPEG4_P2_3GPP_SP_L0B_AMR</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/mp4">AVC_3GPP_BL_QCIF15_AAC</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<Transcoding>
+			<Video targetContainer="mpegts" targetACodec="ac3" aBitrate="384">
+				<Matches container="matroska" vCodec="h264"/>
+				<Matches container="flv" vCodec="h264"/>				
+			</Video>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="matroska" />
+				<Matches container="flv" />
+				<Matches container="wtv" />
+				<Matches container="mp4" aCodec="ac3" />
+				<Matches container="asf" />
+			</Video>
+			<Audio targetContainer="lpcm">
+				<Matches container="asf" />
+				<Matches container="flac" />
+				<Matches container="ogg" />
+			</Audio>
+		</Transcoding>
+		<OnlineTranscoding>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="mp4" />
+			</Video>
+		</OnlineTranscoding>
+		<AutomaticImageRotation>true</AutomaticImageRotation>
+		<LimitImageResolution>false</LimitImageResolution>
+	</Profile>
+	
+	<Profile id="sony2011" name="Sony Bravia TV (2011)" extendsProfileId="sony2012">
+      <!-- 2011 models
+         - Still images: JPEG
+         - Music: MP3, linear PCM, WMA
+         - Video: AVCHD, MPEG2, MPEG1, MP4 (AVC), MP4 (MPEG4), DivX, WMV -->
+      <Detection>
+         <UPnPSearch>
+            <FriendlyName>BRAVIA KDL-\d{2}([A-Z]X\d2\d|CX400).*</FriendlyName>
+         </UPnPSearch>
+      </Detection>
+      <Transcoding>
+         <!-- Transcode audio MP4 -->
+         <Audio targetContainer="lpcm" forceInheritance="true">
+            <!-- To allow "pause" then "resume" functions and album art for TVs that support it - transcode to mp3 instead -->
+            <Matches container="mp4" />
+         </Audio>         
+      </Transcoding>
+   </Profile> 
+   
+	<Profile id="sony2010" name="Sony Bravia TV (2010)" extendsProfileId="sony2011">
+      <!-- 2010 models
+         - Still images: JPEG
+         - Music: MP3, linear PCM
+         - Video: AVCHD, MPEG2 (not playable in some cases) -->
+		<Detection>
+			<UPnPSearch>
+				<FriendlyName>BRAVIA KDL-\d{2}[EHLNPB]X\d[01]\d.*</FriendlyName>
+			</UPnPSearch>
+		</Detection>
+		<Transcoding>
+			<!-- Remux h264 video + AC3/AAC audio to MPEG-TS stream without transcoding -->
+			<Video targetContainer="mpegts" forceInheritance="true">
+				<Matches container="mp4" vCodec="h264" aCodec="aac" />
+				<Matches container="mp4" vCodec="h264" aCodec="ac3" />
+				<Matches container="3gp" vCodec="h264" aCodec="aac" />
+        		<Matches container="3gp" vCodec="h264" aCodec="ac3" />    
+			</Video>
+			<!-- Transcode MPEG1, VC-1, DivX, AVI, MP4, WMV -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+				<Matches container="mpegvideo" />
+				<Matches container="mpegts" vCodec="vc1" />
+				<Matches container="avi" vCodec="mpeg4" />
+				<Matches container="avi" vCodec="msmpeg4" />
+				<Matches container="avi" vCodec="mjpeg" />
+				<Matches container="mp4" />
+				<Matches container="asf" />
+				<Matches container="3gp" />
+			</Video>
+			<!-- Transcode WMA -->
+			<Audio targetContainer="lpcm" forceInheritance="true">
+				<!-- To allow "pause" then "resume" functions and album art for TVs that support it - transcode to mp3 instead -->
+				<Matches container="asf" />
+			</Audio>
+		</Transcoding>
+	</Profile> 
+	
+	<Profile id="20" name="Philips" extendsProfileId="1">
+		<Detection>
+			<UPnPSearch>
+				<FriendlyName>.*PHILIPS.*</FriendlyName>
+			</UPnPSearch>
+		</Detection>
+		<SubtitlesMimeType>text/srt</SubtitlesMimeType>
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="video/avi" name="">AVI</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<Transcoding>
+			<Video targetContainer="mpeg" targetACodec="ac3" targetVCodec="mpeg2video">
+				<Matches container="matroska" />
+				<Matches container="mp4" />
+				<Matches container="mpegts" />
+				<Matches container="mpegvideo" />
+				<Matches container="asf" />
+				<Matches container="ogg" />
+				<Matches container="flv" />
+				<!-- if audio different to ac3, must be transcoded -->
+				<Matches container="mpeg" aCodec="aac" />
+				<Matches container="mpeg" aCodec="mp3" />
+				<Matches container="mpeg" aCodec="dca" />
+			</Video>
+		</Transcoding>
+		<OnlineTranscoding>
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384">
+				<Matches container="mp4" />
+				<Matches container="flv" />
+			</Video>
+			<Audio targetContainer="lpcm">
+				<Matches container="mp3"/>
+				<Matches container="flv"/>
+				<Matches container="asf"/>
+			</Audio>
+		</OnlineTranscoding>
+	</Profile>
+	
+	<Profile id="sony2009" name="Sony Bravia TV (2009)" extendsProfileId="sony2010">
+		<!-- 2009 and earlier models need a separate profile -->
+		<Detection>
+			<UPnPSearch>
+				<!-- 2009 models known to support UPnPSearch -->
+				<FriendlyName>BRAVIA KDL-\d{2}(WE5|(E53|E55|V55|V56|W55|W57|Z55|Z57)\d0) *</FriendlyName>
+			</UPnPSearch>
+			<HttpHeaders>
+				<!-- 2008 models, and possibly older or different region 2009 firmwares which may not support UPnPSearch -->
+				<X-AV-Client-Info>.*BRAVIA KDL-\d{2}(([A-Z](1|5|E1|R1|BR45|BR9|[1357]0\d{2}|4\d{3}))|(S55|S57|W51|Z51|Z58)\d0).*</X-AV-Client-Info>
+			</HttpHeaders>
+		</Detection>
+		<Transcoding>
+			<!-- Transcode baseline h264 in mp4/non-isom container -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="192" DAR="16:9">
+				<Matches container="mp4" vCodec="h264" profile="baseline" ftypNotIn="isom" />
+			</Video>
+		</Transcoding>
+		<OnlineTranscoding>
+			<!-- Transcode baseline h264 in mp4/non-isom container -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="192" DAR="16:9">
+				<Matches container="mp4" vCodec="h264" profile="baseline" ftypNotIn="isom" />
+			</Video>
+		</OnlineTranscoding>
+	</Profile>
+   
+	<Profile id="22" name="Denon AVR" extendsProfileId="1">
+		<Detection>
+			<UPnPSearch>
+			  <FriendlyName>Denon:\[AVR:.*</FriendlyName>
+			  <Manufacturer>Denon</Manufacturer>
+			</UPnPSearch>
+		</Detection>
+		<Transcoding>
+			<Audio targetContainer="lpcm">
+				<Matches container="mp4" />
+				<Matches container="ogg" />
+			</Audio>
+		</Transcoding>
+	</Profile>
+	
+	<Profile id="viera2011a" name="Panasonic Viera E/G/GT/DT/UT (2011/2012)" extendsProfileId="1">
+		<!-- Panasonic Viera E30, E3, G30, GT30, DT30, UT30 With avi (2011), E50... (2012)  With AVI Support -->
+		<Detection>
+			<UPnPSearch>
+				<FriendlyName>VIERA (G|D|U|E)T?(3|5)0?.*</FriendlyName>
+				<Manufacturer>Panasonic</Manufacturer>
+			</UPnPSearch>
+		</Detection>
+		<ContentDirectoryMessageBuilder>org.serviio.upnp.service.contentdirectory.PacketVideoDLNAMessageBuilder</ContentDirectoryMessageBuilder>
+		<SubtitlesMimeType>text/srt</SubtitlesMimeType>
+		<MediaFormatProfiles>
+			<MediaFormatProfile mime-type="video/divx">AVI</MediaFormatProfile>
+		</MediaFormatProfiles>
+		<Transcoding>
+			<!-- Transcode h264 videos with profile level > 4.1 to mpegts with ac3 audio -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3" forceInheritance="true">
+				<Matches container="*" vCodec="h264" profile="high" levelGreaterThan="4.1" />
+				<Matches container="*" vCodec="h264" profile="main" levelGreaterThan="4.1" />
+			</Video>
+			<!-- remux VORBIS/FLAC/LPCM in MKV/MP4 to AC3 -->
+			<Video targetContainer="mpegts" targetACodec="ac3" forceInheritance="true">
+				<Matches container="matroska" vCodec="h264" aCodec="flac" />
+				<Matches container="matroska" vCodec="h264" aCodec="vorbis" />
+				<Matches container="matroska" vCodec="h264" aCodec="truehd" />
+				<Matches container="mp4" vCodec="h264" aCodec="lpcm" />
+				<Matches container="mp4" vCodec="h264" aCodec="aac" />
+				<Matches container="3gp" vCodec="h264" />
+			</Video>
+			<!-- Remux MPEG-TS with no transcoding -->
+			<Video targetContainer="mpegts" forceInheritance="true">
+				<Matches container="avi" vCodec="h264" />
+				<Matches container="mp4" vCodec="h264" />
+				<Matches container="matroska" vCodec="mpeg2video" />
+			</Video>
+			<!-- Remux WTV files to MPEG-PS with no transcoding -->
+			<Video targetContainer="mpeg" forceInheritance="true">
+				<Matches container="wtv" />
+			</Video>
+			<!-- unsupported codecs will be transcoded into mpeg-ts, mpeg2 video and ac3 audio -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3" forceInheritance="true">
+				<Matches container="avi" vCodec="mjpeg" />
+				<Matches container="avi" vCodec="dvvideo" />
+				<Matches container="mp4" vCodec="mjpeg" />
+				<Matches container="mp4" vCodec="mpeg4" />
+				<Matches container="mpeg" vCodec="mpeg1video" />
+				<Matches container="matroska" vCodec="mpeg4" />
+				<Matches container="matroska" vCodec="vp8" />				
+				<Matches container="asf" />
+				<Matches container="flv" />
+				<Matches container="ogg" />
+				<Matches container="3gp" />
+			</Video>
+			<!-- unsupported audio will be transcoded into lpcm audio -->
+			<Audio targetContainer="lpcm" forceInheritance="true">
+				<Matches container="flac" />
+				<Matches container="ogg" />
+				<Matches container="asf" />
+				<Matches container="adts" />
+			</Audio>
+		</Transcoding>
+	</Profile>
+
+	<Profile id="viera2011" name="Panasonic Viera S/ST/VT (2011)" extendsProfileId="viera2011a">
+		<!-- Panasonic Viera S30, ST30, VT30 (2011)  Without AVI Support -->
+		<Detection>
+			<UPnPSearch>
+				<FriendlyName>VIERA (S|V)T?(3|5)0?.*</FriendlyName>
+				<Manufacturer>Panasonic</Manufacturer>
+			</UPnPSearch>
+		</Detection>
+		<Transcoding>
+			<!-- unsupported codecs will be transcoded into mpeg-ts, mpeg2 video and ac3 audio -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3">
+				<Matches container="avi" />				
+			</Video>
+		</Transcoding>
+	</Profile>
+	
+	<Profile id="viera2010" name="Panasonic Viera (2010)" extendsProfileId="viera2011a">
+		<!-- Panasonic Viera VT20, V20, G20, D25, D28 (2010) -->
+		<Detection>
+			<HttpHeaders>
+				<User-Agent>.*Panasonic.*</User-Agent>
+			</HttpHeaders>
+		</Detection>
+		<Transcoding>
+			<!-- unsupported codecs will be transcoded into mpeg-ts, mpeg2 video and ac3 audio -->
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" targetACodec="ac3">
+				<Matches container="matroska" />				
+			</Video>
+		</Transcoding>
+	</Profile>
+		
+</Profiles>
