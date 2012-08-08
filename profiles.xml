@@ -693,7 +693,7 @@
 			<MediaFormatProfile mime-type="video/divx">MATROSKA</MediaFormatProfile>
 			<!-- To avoid needing region-specific profiles, avi must be set to mpeg mime type (US players require this) -->
 			<!-- AVI clips seems to be a little bit slower to start like this on European players. If that bothers you, delete the line below -->
-			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVI</MediaFormatProfile>
+			<MediaFormatProfile mime-type="video/avi">AVI</MediaFormatProfile>
 			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_SD_AAC_MULT5</MediaFormatProfile>
 			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_SD_MPEG1_L3</MediaFormatProfile>
 			<MediaFormatProfile mime-type="video/mpeg" name="MPEG_PS_PAL,MPEG_PS_NTSC">AVC_MP4_MP_SD_AC3</MediaFormatProfile>
