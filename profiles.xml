@@ -593,7 +593,7 @@
 		<Transcoding>
 			<!-- Transcode all h264 video with HIGH/MAIN > Level 4.1 on MPEG-TS stream with MPEG2VIDEO and ac3 audio transcoding -->
 			<!-- expected profile MPEG_TS_SD_EU/MPEG_TS_SD_NA/MPEG_TS_SD_KO -->
-			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" forceInheritance="true">
 				<Matches container="*" vCodec="h264" profile="high" levelGreaterThan="4.1" />
 				<Matches container="*" vCodec="h264" profile="main" levelGreaterThan="4.1" />
 				<Matches container="mpegts" vCodec="vc1" />
@@ -634,7 +634,7 @@
 			</Video>
 			<!-- All Others video/audio codec will be transcoded into mpeg2ts, mpeg2video and ac3 audio -->
 			<!-- expected profile MPEG_TS_SD_EU/MPEG_TS_SD_NA/MPEG_TS_SD_KO -->
-			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" forceInheritance="true">
 				<Matches container="matroska" />
 				<Matches container="flv" />
 				<Matches container="wtv" />
@@ -657,7 +657,7 @@
 				<Matches container="flv" vCodec="h264" />
 				<Matches container="applehttp" vCodec="h264" />
 			</Video>
-			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+			<Video targetContainer="mpeg" targetVCodec="mpeg2video" targetACodec="ac3" aBitrate="384" forceInheritance="true">
 				<Matches container="asf" /> <!-- to support mms:// streams -->
 				<Matches container="flv" />
 			</Video>
@@ -996,7 +996,7 @@
         		<Matches container="3gp" vCodec="h264" aCodec="ac3" />    
 			</Video>
 			<!-- Transcode MPEG1, VC-1, DivX, AVI, MP4, WMV -->
-			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" DAR="16:9" forceInheritance="true">
+			<Video targetContainer="mpegts" targetVCodec="mpeg2video" maxVBitrate="17000" targetACodec="ac3" aBitrate="384" forceInheritance="true">
 				<Matches container="mpegvideo" />
 				<Matches container="mpegts" vCodec="vc1" />
 				<Matches container="avi" vCodec="mpeg4" />
